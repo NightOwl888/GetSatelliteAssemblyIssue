@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICU4N", "ICU4N\ICU4N.csproj", "{D1C39FE5-3019-4BAA-9BB5-F10C7F1AF23C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_artifacts", "_artifacts", "{8FF03AEE-FFBB-426D-AD87-531826DAD963}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SatelliteAssemblies", "SatelliteAssemblies", "{EBD0449E-8CBA-469D-A044-DAD8BE3138E8}"
+	ProjectSection(SolutionItems) = preProject
+		_artifacts\SatelliteAssemblies\ICU4N.resources.dll = _artifacts\SatelliteAssemblies\ICU4N.resources.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "en", "en", "{E1FBAEBC-9782-480E-9726-8D2A6B773E27}"
+	ProjectSection(SolutionItems) = preProject
+		_artifacts\SatelliteAssemblies\en\ICU4N.resources.dll = _artifacts\SatelliteAssemblies\en\ICU4N.resources.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "en-US", "en-US", "{5C64C0AA-28D7-404E-963C-D7B8ACF081D7}"
+	ProjectSection(SolutionItems) = preProject
+		_artifacts\SatelliteAssemblies\en-US\ICU4N.resources.dll = _artifacts\SatelliteAssemblies\en-US\ICU4N.resources.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{EC7F4DDE-C7AB-4F2A-B32E-2B5A288F45CD}"
+	ProjectSection(SolutionItems) = preProject
+		.build\key.snk = .build\key.snk
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICU4N.Tests", "ICU4N.Tests\ICU4N.Tests.csproj", "{1071ED4E-6117-4FC0-80DA-51053B0B4A29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1C39FE5-3019-4BAA-9BB5-F10C7F1AF23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C39FE5-3019-4BAA-9BB5-F10C7F1AF23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C39FE5-3019-4BAA-9BB5-F10C7F1AF23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C39FE5-3019-4BAA-9BB5-F10C7F1AF23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1071ED4E-6117-4FC0-80DA-51053B0B4A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1071ED4E-6117-4FC0-80DA-51053B0B4A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1071ED4E-6117-4FC0-80DA-51053B0B4A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1071ED4E-6117-4FC0-80DA-51053B0B4A29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBD0449E-8CBA-469D-A044-DAD8BE3138E8} = {8FF03AEE-FFBB-426D-AD87-531826DAD963}
+		{E1FBAEBC-9782-480E-9726-8D2A6B773E27} = {EBD0449E-8CBA-469D-A044-DAD8BE3138E8}
+		{5C64C0AA-28D7-404E-963C-D7B8ACF081D7} = {EBD0449E-8CBA-469D-A044-DAD8BE3138E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE8A4092-810E-4140-A616-66ED57BF3996}
+	EndGlobalSection
+EndGlobal

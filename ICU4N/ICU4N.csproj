@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <SolutionDir Condition=" '$(SolutionDir)' == '' ">$(MSBuildThisFileDirectory)../</SolutionDir>
+    <ArtifactsDir>$(SolutionDir)_artifacts</ArtifactsDir>
+    <ICU4NSatelliteAssemblyOutputDir>$(ArtifactsDir)/SatelliteAssemblies</ICU4NSatelliteAssemblyOutputDir>
+  </PropertyGroup>
+  
+  <ItemGroup Label="Specifies generated sattelite assemblies should be copied to the output folder (and dependent projects as well)">
+    <None Include="$(ICU4NSatelliteAssemblyOutputDir)/**/*.resources.dll" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <AssemblyVersion>60.0.0.0</AssemblyVersion>
+    <PackageVersion></PackageVersion>
+    <FileVersion>60.1.0</FileVersion>
+    <InformationalVersion>60.1.0-alpha.381+20d113ebd5</InformationalVersion>
+    <Copyright>Copyright © 2019 - 2022 ICU4N</Copyright>
+    <Description>ICU (International Components for Unicode) is a set of libraries providing Unicode and Globalization support for software applications. It provides Text-boundary analysis (RuleBasedBreakIterator) as well as easy access to all of the many Unicode character properties, Unicode Normalization, Case Folding and other fundamental operations as specified by the Unicode Standard. ICU4N is a .NET port of ICU4J.</Description>
+    <Company>ICU4N</Company>
+    <Title>ICU4N</Title>
+    <Product>ICU4N</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Assembly Signing">
+    <AssemblyOriginatorKeyFile>$(SolutionDir).build/key.snk</AssemblyOriginatorKeyFile>
+    <PublicKey>0024000004800000940000000602000000240000525341310004000001000100d12801609bb37c42c9aa2543be20a461d42954f501628392a51bd57254b0a7c11d7e5f5d8155b6cb732c1c00786acc288202b0940f237a4a97948a37b6713713612d17cac30ff9bc10782334a72dce2326c768685e7ce2ab5335d61c22e6224a7beed58ab3cdba23b48d7ebbbe5c94bc90586e8eae358e1c915d082f36f961e2</PublicKey>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+
+</Project>
